@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<title>Page title</title>
+<style>
+main {
+  margin: 0 auto;
+  width: 70%;
+}
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.flex-1 {
+  margin-bottom: 20px;
+  width: 250px;
+}
+@media all and (min-width: 768px) {
+  .box-1 {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .flex-1 {
+    margin-bottom: 0;
+  }
+}
+.box-2 {
+  display: flex;
+  flex-direction: column;
+}
+@media all and (min-width: 768px) {
+  .box-2 {
+    flex-direction: row;
+  }
+  .image-1 {
+    width: 250px;
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+  }
+  .image-2 {
+    width: 250px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+  }
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Interview code examples</h1>
+<h2>Flexbox component</h2>
+<div class="box-1">
+  <div class="flex-1">
+    <div class="content">
+      <h3>Component title</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button>Button</button>
+    </div>
+  </div>
+  <div class="flex-2">
+    <img src="https://via.placeholder.com/250" alt="">
+  </div>
+</div>
+<h2>Image clip component</h2>
+<div class="box-2">
+  <div class="image-1">
+    <img src="https://via.placeholder.com/250" alt="">
+  </div>
+  <div class="image-2">
+    <img src="https://via.placeholder.com/250" alt="">
+  </div>
+</div>
+</main>
+</body>
+</html>
